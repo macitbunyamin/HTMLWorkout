@@ -4,99 +4,8 @@
 <title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+<link rel="stylesheet" href="indextstyle.css">
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #666;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #ddd;
-}
-
-li a.active {
-  color: white;
-  background-color: #4CAF50;
-}
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-
-</style>
 </head>
 <body>
 
@@ -104,34 +13,48 @@ footer {
 
 
 <header>
-        <h6>Wissen AKADEMİ</h6>
-        <img src="Wissen.jpg" alt="Girl in a jacket" width="300" height="100">
-  <ul>
-  <li><a class="active" href="#home">ANASAYFA</a></li>
-  <li><a href="#news">HAKKIMIZDA</a></li>
-  <li><a href="#contact">HİZMETLERİMİZ</a></li>
-  <li><a href="#about">İLETİSİM</a></li>
+  <h2>Bunyamin MACİT</h2>
+
+<ul>
+  <li><a href="index.html">Anasayfa</a></li>
+  <li><a href="projelerim.html">Projeler</a></li>
+  <li><a href="hakkimizda.html">Hakkimizda</a></li>
+  <li><a href="iletisim.html">İletişim</a></li>
 </ul>
 </header>
 
 <section>
-  <nav>
-    <ul>
-      <li><a href="#">Ürünlerimiz</a></li>
-      <li><a href="#">E-Commerce</a></li>
-      <li><a href="#">CRM</a></li>
-      <li><a href="#">ERM</a></li>
-    </ul>
-  </nav>
   
-  <article>
-    <h1>London</h1>
+
+    <div class="card">
+      <img src="bayrak.jpg" alt="John" style="width:100%">
+      <h1>Bünyamin MACİT</h1>
+      <p class="title">CEO & Founder, Example</p>
+      <p> BahçeŞEHİR üniversitesi </p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <a href="hakkimizda.html" class="btn btn-info" role="button">BEN KİMİM?</a>
+    </div>
+  
     
+  <article>
+    <h1>Bünyamin MACİT kimdir</h1>
+    
+    <p>The .thumbnail class can be used to display an image gallery.</p>
+  <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+  <p>Click on the images to enlarge them.</p>
+    
+
   </article>
 </section>
 
+
 <footer>
-  <p>Footer</p>
+  <p>kişisel bloc sayfasıdır</p>
 </footer>
 
 </body>
